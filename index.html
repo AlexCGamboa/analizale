@@ -183,7 +183,7 @@
         }
 
         .service-card {
-    background: linear-gradient(45deg, #2980b9, #6dd5fa); /* AZUL */
+            background: linear-gradient(135deg, #f1dfbe, #efc5ad);
             padding: 2.5rem;
             border-radius: 20px;
             box-shadow: 0 8px 25px rgba(227, 67, 88, 0.1);
@@ -530,7 +530,7 @@
                 Especialista en análisis de datos para PYMES. Te ayudo a entender tus números 
                 y tomar decisiones más inteligentes para hacer crecer tu negocio.
             </p>
-            <button class="cta-button" onclick="openModal()">
+<button class="cta-button cta-azul" onclick="openModal()">
                 📞 Solicitar Asesoría
             </button>
         </div>
@@ -668,6 +668,17 @@
         // Variables globales
         const modal = document.getElementById('consultationModal');
         const form = document.getElementById('consultationForm');
+
+        /* Botón azul exclusivo para "Solicitar Asesoría" */
+.cta-button.cta-azul {
+    background: linear-gradient(45deg, #2980b9, #6dd5fa);
+    box-shadow: 0 4px 20px rgba(41, 128, 185, 0.3);
+}
+
+.cta-button.cta-azul:hover {
+    background: linear-gradient(45deg, #6dd5fa, #2980b9);
+    box-shadow: 0 8px 30px rgba(41, 128, 185, 0.4);
+}
 
         // Función para abrir el modal
         function openModal() {
@@ -911,7 +922,7 @@
             serviceCards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
-                card.style.transform = 'translateY(30px)';
+                                card.style.transform = 'translateY(30px)';
             });
         });
     </script>
